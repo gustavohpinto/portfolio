@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600&display=swap');
+
+
+/* variáveis */
+:root{
+    --font: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fafbfd;
+    font-size: 0.938rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, p, a{
+    font-family: var(--font);
+}
+
+a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.main{
+    overflow: hidden;
+} 
+
+.section{
+    padding: 2.5rem 0 1rem;
+}
+
+.button{
+    padding: 5px;
+}
+
+.btn{
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.icons{
+    color: black;
+}
+
+.seta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* home */
+.home{
+    margin-top: 8rem; 
+    align-self: center;
+}
+
+.infos{
+    text-align: right;
+    padding: 4rem;
+}
+
+.infos .nome{
+    font-size: 2rem;
+}
+
+.infos .texto_profissao{
+    font-size: 1.5rem;
+}
+
+.img_home{
+    width: 260px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .home{
+        margin-top: .5rem; 
+        align-self: center;
+    }
+    .infos{
+        text-align: center;
+        padding: 2rem 4rem;
+    }
+    .infos .nome{
+        font-size: 1.5rem;
+    }
+    .infos .texto_profissao{
+        font-size: 1.25rem;
+    }
+    .imagem{
+        text-align: center !important;
+    }
+    .img_home{
+        width: 180px;
+        border-radius: 50%;
+    }
+    .seta{
+        padding-top: 2.25rem;
+    }
+    .img_sobre{
+        width: 300px !important;
+    }
+    .apresentacao{
+        padding: 1rem !important;
+    }
+    .profissao, .ensino{
+        padding-left: 17px !important;
+    }
+}
+
+/* SOBRE */
+.sobre{
+    margin-top: 2rem; 
+    text-align: justify;
+
+}
+
+.apresentacao{
+    padding-top: 5rem; 
+}
+
+.img_sobre{
+    width: 400px;
+    padding-right: 1rem;
+}
+
+
+/* ESPECIALIDADES */
+.especialidades{
+    margin-top: 5rem;
+    text-align: center !important;
+}
+
+.especialidades i{
+    margin-top: 1rem;
+    width: 50px;
+    font-size: 50px;
+}
+
+/* PROFISSÃO E EDUCAÇÃO */
+.education{
+    padding-top: 4rem;
+}
+
+.profissao{
+    padding-left: 43px;
+}
+
+.ensino{
+    padding-left: 52px;
+}
+
+/* CONTATO */
+.contato{
+    padding-top: 4rem;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;               
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .8);  
+    border-radius: 20px; 
+}
+
