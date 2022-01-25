@@ -66,7 +66,7 @@ a{
 
 .infos{
     text-align: right;
-    padding: 4rem;
+    padding: 2.5rem;
 }
 
 .infos .nome{
@@ -77,45 +77,13 @@ a{
     font-size: 1.5rem;
 }
 
+.infos .icons{
+    font-size: 1.5rem;
+}
+
 .img_home{
     width: 260px;
     border-radius: 50%;
-}
-
-@media screen and (max-width: 767px) {
-    .home{
-        margin-top: .5rem; 
-        align-self: center;
-    }
-    .infos{
-        text-align: center;
-        padding: 2rem 4rem;
-    }
-    .infos .nome{
-        font-size: 1.5rem;
-    }
-    .infos .texto_profissao{
-        font-size: 1.25rem;
-    }
-    .imagem{
-        text-align: center !important;
-    }
-    .img_home{
-        width: 180px;
-        border-radius: 50%;
-    }
-    .seta{
-        padding-top: 2.25rem;
-    }
-    .img_sobre{
-        width: 300px !important;
-    }
-    .apresentacao{
-        padding: 1rem !important;
-    }
-    .profissao, .ensino{
-        padding-left: 17px !important;
-    }
 }
 
 /* SOBRE */
@@ -160,6 +128,39 @@ a{
     padding-left: 52px;
 }
 
+/* TRABALHOS */
+.trabalhos{
+    margin-top: 2rem;
+    text-align: center !important;
+}
+
+.swiper {
+    margin-top: 1rem;
+    width: 500px;
+    height: 320px;
+  }
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    background-color: #fafbfd; 
+    border: .5px solid rgba(160, 160, 160, 0.5);
+}
+
+.swiper-slide h2{
+    font-size: 22px;
+}
+
+.swiper-slide img{
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
 /* CONTATO */
 .contato{
     padding-top: 4rem;
@@ -174,3 +175,45 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px; 
 }
 
+@media screen and (max-width: 767px) {
+    .home{
+        align-self: center;
+    }
+    .infos{
+        text-align: center;
+        padding: 2rem 4rem;
+    }
+    .infos .nome{
+        font-size: 1.5rem;
+    }
+    .infos .texto_profissao{
+        font-size: 1.25rem;
+    }
+    .imagem{
+        text-align: center !important;
+    }
+    .img_home{
+        width: 180px;
+        border-radius: 50%;
+    }
+    .seta{
+        padding-top: 2.25rem;
+    }
+    .img_sobre{
+        width: 300px !important;
+    }
+    .apresentacao{
+        padding: 1rem !important;
+    }
+    .profissao, .ensino{
+        padding-left: 0px !important;
+    }
+    .swiper {
+        margin-top: 1rem;
+        width: 320px;
+        height: 320px;
+    }
+    .swiper-slide {
+        padding: 1rem;
+    }
+}

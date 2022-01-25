@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
         <link rel="stylesheet" href="assets/css/estilo.css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
         <title>Gustavo Pinto</title>
 
     </head>
@@ -22,7 +26,7 @@
 
                             <div class="redes_sociais">
                                 <a href="https://www.linkedin.com/in/gustavohpinto/" class="icons"><i class="bx bxl-linkedin-square"></i></a>  
-                                <a href="https://www.linkedin.com/in/gustavohpinto/" class="icons"><i class="bx bxl-github"></i></a>
+                                <a href="https://github.com/gustavohpinto/" class="icons"><i class="bx bxl-github"></i></a>
                             </div>
                             
                             <div class="button">
@@ -134,6 +138,56 @@
                 </div> 
             </section>
 
+            <section class="section trabalhos">
+                <div class="container">
+                    <div>
+                        <h2>Projetos</h2>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                                <div>
+                                    <img src="assets/img/beesiness.png" alt="" style="width: 70%;">
+                                    <h2>Beesiness</h2>
+                                    <p>
+                                        A Beesiness é um serviço que busca educar financeiramente e
+                                        ambientalmente os brasileiros.
+                                    </p>
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div>
+                                <img src="assets/img/crud_java.png" alt="" style="width: 70%;">
+                                <h2>CRUD em Java</h2>
+                                <p>
+                                    Trabalho escolar com base na criação de um sistema de controle 
+                                    de Ordens de Serviço com acesso ao banco de dados MySQL.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div>
+                                <img src="assets/img/flappy-bird.jpg" alt="" style="width: 50%;">
+                                <h2>Flappy Bird</h2>
+                                <p>
+                                    Recriação do jogo 'Flappy Bird' em JavaScript.
+                                </p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide"><div>
+                            <img src="assets/img/github.png" alt="" style="width: 50%;">
+                            <h2>Projeto interdisciplinar</h2>
+                            <p>
+                                Para mais projetos, acesse o meu <a href="https://github.com/gustavohpinto/">Github</a>.
+                            </p>
+                        </div></div>
+                        </div>
+                      </div>
+                </div> 
+            </section>
+
+            
+
             <section class="section contato">
                 <div class="container">
                     <div class="col">
@@ -147,6 +201,16 @@
                 </div> 
             </section>
         </main>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "cards",
+              grabCursor: true,
+            });
+          </script>
+        
     </body>
 
 </html>
