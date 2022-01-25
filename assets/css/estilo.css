@@ -178,6 +178,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 767px) {
     .home{
         align-self: center;
+        margin-top: 2rem !important; 
     }
     .infos{
         text-align: center;
